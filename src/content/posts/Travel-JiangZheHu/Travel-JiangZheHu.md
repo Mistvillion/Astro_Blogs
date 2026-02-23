@@ -1,7 +1,7 @@
 ---
 title: 江浙沪六日游记
 published: 2026-01-24
-description: This is the first post of my new Astro blog.
+description: 2026年1月18日至1月23日在上海、苏州、杭州游玩日记
 tags: [Travel]
 category: 多彩生活
 draft: false
