@@ -1,9 +1,9 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于
 
-::github{repo="saicaca/fuwari"}
+博客仓库：
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+::github{repo="Mistvillion/Astro_Blogs"}
+
+大二软件工程专业在读。
+
+关于这个网名，北城烟雨阁，在翻阅了那么多古籍之后，我不是很想用那些不太常见的意向和典故充当网名，但又想有一点意境在其中，于是取了苏轼的 **竹杖芒鞋轻胜马，谁怕，一蓑烟雨任平生** 中的 **烟雨** 意象。“北城”则近似谐音 **北辰** ，一方面是道德的至高典范（源自《论语》：**为政以德，譬如北辰，居其所而众星共之。**），另一方面也是文学与情感中的精神灯塔，指引方向如**天地垂大象，北斗回北辰**。孤独坚守如**北辰微暗少光色，四星煌煌如火赤**。另外，相较于“南城”的柔情似水，“北城”的情感表达通常是**内敛而深沉**的，象征着命运的磨砺或性格的刚毅。而英文网名就没有想那么多了，只保留了“烟雨阁”的意象，分别取“烟雨” **Mist** 和“阁” **Pavilion**，组合而成的一个新单词 **Mistvillion**，简单易记，朗朗上口。
