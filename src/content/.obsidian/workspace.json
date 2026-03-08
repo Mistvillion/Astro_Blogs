@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Hollow-Knight/Hollow-Knight.md",
+                "file": "posts/Travel-JiangZheHu/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Hollow-Knight"
+              "title": "index"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "spec/about.md",
+                "file": "posts/Travel-JiangZheHu/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,25 +197,25 @@
       "bases:新建数据库": false
     }
   },
-  "active": "12d94cc547a9aedc",
+  "active": "02b09e54bd34ffd8",
   "lastOpenFiles": [
-    "posts/Hollow-Knight/Hollow-Knight.md",
+    "posts/Hollow-Knight/index.md",
+    "posts/guide/index.md",
+    "posts/Travel-JiangZheHu/index.md",
     "spec/about.md",
+    "posts/Poet-JinSe.md",
     "posts/draft.md",
     "posts/expressive-code.md",
     "posts/markdown.md",
     "posts/markdown-extended.md",
-    "posts/Poet-JinSe.md",
     "posts/video.md",
     "posts/Hollow-Knight/silksong.jpg",
     "posts/Hollow-Knight/hollow-knight.jpg",
     "posts/Hollow-Knight/achievements.png",
     "posts/Hollow-Knight/header(1).jpg",
     "posts/Hollow-Knight/header.jpg",
-    "posts/guide/index.md",
     "posts/Hollow-Knight",
     "posts/guide/cover.jpeg",
-    "posts/Travel-JiangZheHu/Travel-JiangZheHu.md",
     "posts/Travel-JiangZheHu/复旦大学1.jpg"
   ]
 }
