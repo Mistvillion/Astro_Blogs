@@ -3,7 +3,8 @@ title: 此情可待成追忆，只是当时已惘然
 published: 2025-11-18
 description: 李商隐的《锦瑟》真是情文并茂、清新隽永
 tags:
-  - Thinking
+  - 古诗
+  - 李商隐
 category: 随笔感想
 draft: true
 ---
