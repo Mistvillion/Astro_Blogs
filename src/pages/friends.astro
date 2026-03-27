@@ -1,0 +1,34 @@
+---
+// src/pages/friends.astro
+import MainGridLayout from '../layouts/MainGridLayout.astro'
+
+const friends = [
+  {
+    name: "Jaison's ink",
+    introduction: "Stay Hungry. Stay Foolish.",
+    link: "https://jaison.ink/",
+    avatar: "https://jaison.ink/_image?href=%2F_astro%2Favatar.CTKQfaKx.png&w=1280&h=1280&f=webp"
+  }
+  // 以后可以直接在这里添加更多对象
+]
+---
+
+<MainGridLayout title="友情链接">
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="card-base z-10 px-9 py-6 relative w-full ">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {friends.map((friend) => (
+                    <a href={friend.link} target="_blank" rel="noopener noreferrer" 
+                       class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all border border-transparent hover:border-[var(--primary)] group">
+                        <img src={friend.avatar} alt={friend.name} 
+                             class="w-16 h-16 rounded-full border-2 border-white dark:border-zinc-800 shadow-sm mr-4 shrink-0 transition-transform group-hover:rotate-12" />
+                        <div class="overflow-hidden">
+                            <div class="font-bold text-lg truncate text-black/80 dark:text-white/80">{friend.name}</div>
+                            <div class="text-sm opacity-60 line-clamp-1">{friend.introduction}</div>
+                        </div>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
+</MainGridLayout>
