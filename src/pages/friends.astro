@@ -2,7 +2,7 @@
 // src/pages/friends.astro
 import MainGridLayout from '../layouts/MainGridLayout.astro'
 import { i18n } from '../i18n/translation'
-import Key from '../i18n/i18nKey' // 注意：这里匹配你的 export default，不加花括号
+import Key from '../i18n/i18nKey'
 
 const friends = [
   {
@@ -14,20 +14,43 @@ const friends = [
 ]
 ---
 
-<MainGridLayout title={i18n(Key.friends)} inlineSearch={false}>
+<MainGridLayout title={i18n(Key.friends)}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
+            
+            <!-- 1. 这里是新增的文字说明区块 -->
+            <div class="markdown-content mb-8">
+                <h1 class="mt-0">友情链接</h1>
+                <p class="text-75">
+                    欢迎交换友链！
+                    如果你希望出现在本页面，请在评论区发送你的博客的基本信息。
+                    内容包括：网站名称、网站简介、网站地址、网站头像。
+                    <br />
+                    通常只要是内容健康、稳定更新的个人博客我都会添加。
+                </p>
+                <div class="bg-[var(--btn-plain-bg-hover)] p-4 rounded-lg border-l-4 border-[var(--primary)] text-sm text-75">
+                    <p class="font-bold mb-1">本站信息：</p>
+                    <ul class="list-none p-0 m-0">
+                        <li>名称：北城烟雨阁</li>
+                        <li>介绍：玉楼金阙慵归去，且插梅花醉洛阳</li>
+                        <li>链接：https://blog.sparklerain.top/</li>
+                        <li>头像：https://blog.sparklerain.top/assets/images/avatar.jpg</li>
+                    </ul>
+                </div>
+                <hr class="my-6 border-dashed border-black/10 dark:border-white/10" />
+            </div>
+
+            <!-- 2. 原有的友链列表区块 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {friends.map((friend) => (
                     <a href={friend.link} target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group">
+                       class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group active:scale-95">
                         <img src={friend.avatar} alt={friend.name} 
-                             class="w-16 h-16 rounded-full border-2 border-[var(--primary)] shadow-sm mr-4 shrink-0" />
+                             class="w-16 h-16 rounded-full border-2 border-[var(--primary)] shadow-sm mr-4 shrink-0 transition-transform group-hover:rotate-12" />
                         <div class="overflow-hidden">
                             <div class="font-bold text-lg text-90 transition-all group-hover:text-[var(--primary)]">
                                 {friend.name}
                             </div>
-                            <!-- 这里的 text-50 是 Fuwari 预设的半透明色，在深浅模式下都会自动适配 -->
                             <div class="text-sm text-50 line-clamp-1 italic">
                                 {friend.introduction}
                             </div>
@@ -35,6 +58,7 @@ const friends = [
                     </a>
                 ))}
             </div>
+
         </div>
     </div>
 </MainGridLayout>
