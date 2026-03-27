@@ -1,7 +1,8 @@
 ---
+// src/pages/friends.astro
 import MainGridLayout from '../layouts/MainGridLayout.astro'
 import { i18n } from '../i18n/translation'
-import { I18nKey } from '../i18n/i18nKey'
+import Key from '../i18n/i18nKey' // 注意：这里匹配你的 export default，不加花括号
 
 const friends = [
   {
@@ -13,19 +14,20 @@ const friends = [
 ]
 ---
 
-<MainGridLayout title={i18n(I18nKey.friends)}>
+<MainGridLayout title={i18n(Key.friends)} inlineSearch={false}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {friends.map((friend) => (
                     <a href={friend.link} target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center p-4 rounded-xl transition-all bg-transparent hover:bg-[var(--btn-plain-bg-hover)] active:scale-95">
+                       class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group">
                         <img src={friend.avatar} alt={friend.name} 
-                             class="w-16 h-16 rounded-full border-2 border-[var(--primary)] shadow-md mr-4 shrink-0" />
+                             class="w-16 h-16 rounded-full border-2 border-[var(--primary)] shadow-sm mr-4 shrink-0" />
                         <div class="overflow-hidden">
                             <div class="font-bold text-lg text-90 transition-all group-hover:text-[var(--primary)]">
                                 {friend.name}
                             </div>
+                            <!-- 这里的 text-50 是 Fuwari 预设的半透明色，在深浅模式下都会自动适配 -->
                             <div class="text-sm text-50 line-clamp-1 italic">
                                 {friend.introduction}
                             </div>
