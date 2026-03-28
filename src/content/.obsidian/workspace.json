@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/Poet-JinSe.md",
+                "file": "spec/about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Poet-JinSe"
+              "title": "about"
             }
           }
         ],
@@ -200,6 +200,7 @@
   },
   "active": "7d00b8c6b082e8d1",
   "lastOpenFiles": [
+    "posts/Poet-JinSe.md",
     "posts/MLE-and-OLS.md",
     "posts/markdown.md",
     "posts/expressive-code.md",
@@ -210,7 +211,6 @@
     "posts/guide/index.md",
     "posts/Travel-JiangZheHu/index.md",
     "posts/markdown-extended.md",
-    "posts/Poet-JinSe.md",
     "posts/video.md",
     "posts/AI.md",
     "posts/Hollow-Knight/silksong.jpg",
