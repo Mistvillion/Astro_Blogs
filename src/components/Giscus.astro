@@ -1,0 +1,48 @@
+---
+import { commentConfig } from '../config'
+---
+
+<div class="mt-8 giscus-container">
+  <section class="giscus mx-auto w-full"></section>
+</div>
+
+<script is:inline data-astro-rerun
+  src="https://giscus.app/client.js"
+  data-repo={commentConfig.repo}
+  data-repo-id={commentConfig.repoId}
+  data-category={commentConfig.category}
+  data-category-id={commentConfig.categoryId}
+  data-mapping={commentConfig.mapping}
+  data-strict={commentConfig.strict}
+  data-reactions-enabled={commentConfig.reactionsEnabled}
+  data-emit-metadata={commentConfig.emitMetadata}
+  data-input-position={commentConfig.inputPosition}
+  data-lang={commentConfig.lang}
+  data-loading={commentConfig.loading}
+  crossorigin="anonymous"
+  async>
+</script>
+
+<script is:inline>
+  function updateGiscusTheme() {
+    const theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light'
+    const iframe = document.querySelector('iframe.giscus-frame')
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: theme } } },
+        'https://giscus.app'
+      )
+    }
+  }
+
+  // 监听主题切换按钮的动作
+  const observer = new MutationObserver(updateGiscusTheme)
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] })
+
+  // 初始加载时设置主题
+  window.addEventListener('message', (event) => {
+    if (event.origin !== 'https://giscus.app') return
+    if (!(typeof event.data === 'object' && event.data.giscus)) return
+    updateGiscusTheme()
+  })
+</script>

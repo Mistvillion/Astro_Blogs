@@ -94,3 +94,19 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Please select a dark theme, as this blog theme currently only supports dark background color
 	theme: "github-dark",
 };
+
+// Comment configuration for Giscus.
+export const commentConfig = {
+  enable: true,
+  repo: 'Mistvillion/Astro_Blogs',
+  repoId: 'R_kgDORUgovA', 
+  category: 'Announcements',
+  categoryId: 'DIC_kwDORUgovM4C5h0M',
+  mapping: 'pathname',
+  strict: '0',
+  reactionsEnabled: '1',
+  emitMetadata: '0',
+  inputPosition: 'top',
+  lang: 'zh-CN',
+  loading: 'lazy',
+}
