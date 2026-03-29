@@ -1,59 +1,43 @@
 ---
 // src/pages/friends.astro
-import MainGridLayout from '../layouts/MainGridLayout.astro'
-import { i18n } from '../i18n/translation'
-import Key from '../i18n/i18nKey'
+import { getEntry, render } from "astro:content";
+import Markdown from "@components/misc/Markdown.astro";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
 
-const friends = [
-  {
-    name: "Jaison's ink",
-    introduction: "Stay Hungry. Stay Foolish.",
-    link: "https://jaison.ink/",
-    avatar: "https://jaison.ink/_image?href=%2F_astro%2Favatar.CTKQfaKx.png&w=1280&h=1280&f=webp"
-  },
-  {
-    name: "旅行家说",
-    introduction: "去走上一座山吧，走在夕阳下",
-    link: "https://blogs.papership.top/",
-    avatar: "https://blogs.papership.top/favicon/avatar.png"
-  }
-]
+// 获取内容
+const friendEntry = await getEntry("spec", "friends");
+
+if (!friendEntry) {
+    throw new Error("Friends page content not found in src/content/spec/friends.md");
+}
+
+const { Content } = await render(friendEntry);
+const friends = friendEntry.data.friends || []; // 获取 Markdown 顶部的数组数据
 ---
 
-<MainGridLayout title={i18n(Key.friends)}>
+<MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
             
-            <!-- 1. 这里是新增的文字说明区块 -->
-            <div class="markdown-content mb-8">
-                <p class="text-75">
-                    欢迎交换友链！<br />
-                    如果你希望出现在本页面，请在评论区发送你的博客的基本信息。<br />
-                    内容包括：名称、介绍、链接、头像。<br />
-                    通常只要是内容健康、稳定更新的个人博客我都会添加。
-                </p>
-                <br />
-                <div class="bg-[var(--btn-plain-bg-hover)] p-4 rounded-lg border-l-4 border-[var(--primary)] text-sm text-75">
-                    <p class="font-bold mb-1">本站信息：</p>
-                    <ul class="list-none p-0 m-0">
-                        <li>名称：北城烟雨阁</li>
-                        <li>介绍：玉楼金阙慵归去，且插梅花醉洛阳</li>
-                        <li>链接：https://blog.sparklerain.top/</li>
-                        <li>头像：https://blog.sparklerain.top/assets/images/avatar.jpg</li>
-                    </ul>
-                </div>
-                <hr class="my-6 border-dashed border-black/10 dark:border-white/10" />
-            </div>
+            <!-- 渲染 Markdown 正文内容 -->
+            <Markdown class="mt-2">
+                <Content />
+            </Markdown>
 
-            <!-- 2. 原有的友链列表区块 -->
+            <!-- 分割线 -->
+            <div class="h-[1px] w-full bg-black/5 dark:bg-white/10 my-8"></div>
+
+            <!-- 渲染友链卡片列表 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {friends.map((friend) => (
                     <a href={friend.link} target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group active:scale-95">
+                       class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group active:scale-95 border border-transparent hover:border-[var(--primary)]/20 shadow-sm">
                         <img src={friend.avatar} alt={friend.name} 
-                             class="w-16 h-16 rounded-full border-2 border-[var(--primary)] shadow-sm mr-4 shrink-0 transition-transform group-hover:rotate-12" />
-                        <div class="overflow-hidden">
-                            <div class="font-bold text-lg text-90 transition-all group-hover:text-[var(--primary)]">
+                             class="w-16 h-16 rounded-full border-2 border-[var(--primary)] shadow-sm mr-4 shrink-0 transition-transform group-hover:rotate-12 object-cover" />
+                        <div class="overflow-hidden text-left">
+                            <div class="font-bold text-lg text-90 transition-all group-hover:text-[var(--primary)] truncate">
                                 {friend.name}
                             </div>
                             <div class="text-sm text-50 line-clamp-1 italic">
@@ -63,7 +47,6 @@ const friends = [
                     </a>
                 ))}
             </div>
-
         </div>
     </div>
 </MainGridLayout>
