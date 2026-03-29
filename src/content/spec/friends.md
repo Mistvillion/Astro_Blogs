@@ -16,6 +16,14 @@ friends:
     introduction: "去走上一座山吧，走在夕阳下"
     link: "https://blogs.papership.top/"
     avatar: "https://blogs.papership.top/favicon/avatar.png"
+  - name: "二叉树树"
+    introduction: "Protect What You Love."
+    link: "https://2x.nz/"
+    avatar: "https://q2.qlogo.cn/headimg_dl?dst_uin=2726730791&spec=0"
+  - name: "Eric-Terminal 的博客"
+    introduction: "刃は鞘に、心は花に"
+    link: "https://blog.ericterminal.com"
+    avatar: "https://assets.ericterminal.com/logo-transparent.png"
 ---
 
 # 友链
