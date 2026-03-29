@@ -2,41 +2,58 @@
 // src/pages/friends.astro
 import { getEntry, render } from "astro:content";
 import Markdown from "@components/misc/Markdown.astro";
-import I18nKey from "../i18n/i18nKey";
+import I18nKey from "../i18n/i18nKey"; // 确保这里引用正确
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 
-// 获取内容
 const friendEntry = await getEntry("spec", "friends");
 
 if (!friendEntry) {
-    throw new Error("Friends page content not found in src/content/spec/friends.md");
+    throw new Error("Friends content not found");
 }
 
 const { Content } = await render(friendEntry);
-const friends = friendEntry.data.friends || []; // 获取 Markdown 顶部的数组数据
+const { friends = [], myInfo } = friendEntry.data; // 从 MD 提取数据
 ---
 
-<MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
+<MainGridLayout title={i18n(I18nKey.friends)}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
-        <div class="card-base z-10 px-9 py-6 relative w-full ">
+        <div class="card-base z-10 px-9 py-6 relative w-full">
             
-            <!-- 渲染 Markdown 正文内容 -->
-            <Markdown class="mt-2">
-                <Content />
-            </Markdown>
+            <!-- 1. 渲染开场白 (MD 里的文字内容) -->
+            <div class="mb-6 text-90">
+                <h1 class="text-3xl font-bold mb-4">友情链接</h1>
+                <Markdown>
+                    <Content />
+                </Markdown>
+            </div>
 
-            <!-- 分割线 -->
+            <!-- 2. 【本站信息】卡片样式 -->
+            {myInfo && (
+                <div class="bg-[var(--btn-plain-bg-hover)] p-5 rounded-xl border-l-4 border-[var(--primary)] mb-10">
+                    <p class="font-bold mb-2 text-90 italic flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-[var(--primary)] mr-2"></span>
+                        本站信息
+                    </p>
+                    <ul class="space-y-1 text-75 text-sm font-mono">
+                        <li>名称：{myInfo.name}</li>
+                        <li>介绍：{myInfo.introduction}</li>
+                        <li>链接：<code class="bg-black/5 dark:bg-white/10 px-1 rounded">{myInfo.link}</code></li>
+                        <li>头像：<code class="bg-black/5 dark:bg-white/10 px-1 rounded text-xs">{myInfo.avatar}</code></li>
+                    </ul>
+                </div>
+            )}
+
             <div class="h-[1px] w-full bg-black/5 dark:bg-white/10 my-8"></div>
 
-            <!-- 渲染友链卡片列表 -->
+            <!-- 3. 【友链卡片】列表样式 -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {friends.map((friend) => (
                     <a href={friend.link} target="_blank" rel="noopener noreferrer" 
                        class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group active:scale-95 border border-transparent hover:border-[var(--primary)]/20 shadow-sm">
                         <img src={friend.avatar} alt={friend.name} 
                              class="w-16 h-16 rounded-full border-2 border-[var(--primary)] shadow-sm mr-4 shrink-0 transition-transform group-hover:rotate-12 object-cover" />
-                        <div class="overflow-hidden text-left">
+                        <div class="overflow-hidden">
                             <div class="font-bold text-lg text-90 transition-all group-hover:text-[var(--primary)] truncate">
                                 {friend.name}
                             </div>
@@ -47,6 +64,7 @@ const friends = friendEntry.data.friends || []; // 获取 Markdown 顶部的数�
                     </a>
                 ))}
             </div>
+
         </div>
     </div>
 </MainGridLayout>

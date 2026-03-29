@@ -1,3 +1,4 @@
+// src/content/config.ts
 import { defineCollection, z } from "astro:content";
 
 const postsCollection = defineCollection({
@@ -19,9 +20,30 @@ const postsCollection = defineCollection({
 		nextSlug: z.string().default(""),
 	}),
 });
+
 const specCollection = defineCollection({
-	schema: z.object({}),
+	schema: z.object({
+		// 允许可选的标题
+		title: z.string().optional(),
+		
+		// 允许可选的本站信息对象
+		myInfo: z.object({
+			name: z.string(),
+			introduction: z.string(),
+			link: z.string(),
+			avatar: z.string(),
+		}).optional(),
+
+		// 允许可选的友链数组
+		friends: z.array(z.object({
+			name: z.string(),
+			introduction: z.string(),
+			link: z.string(),
+			avatar: z.string(),
+		})).optional(),
+	}),
 });
+
 export const collections = {
 	posts: postsCollection,
 	spec: specCollection,
