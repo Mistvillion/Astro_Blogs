@@ -4,7 +4,7 @@ myInfo:
   name: "北城烟雨阁"
   introduction: "玉楼金阙慵归去，且插梅花醉洛阳"
   link: "https://blog.sparklerain.top/"
-  avatar: "https://blog.sparklerain.top/assets/images/avatar.jpg"
+  avatar: "https://blog.sparklerain.top/_astro/avatar.DsvW9YNX_2q0Vc2.webp"
 
 # 2. 这里是友链列表的数据
 friends:
@@ -15,7 +15,7 @@ friends:
   - name: "旅行家说"
     introduction: "去走上一座山吧，走在夕阳下"
     link: "https://blogs.papership.top/"
-    avatar: "https://blogs.papership.top/favicon/avatar.png"
+    avatar: "https://blogs.papership.top/_astro/avatar.Ci2zaVjR_ZM0tpw.webp"
   - name: "二叉树树"
     introduction: "Protect What You Love."
     link: "https://2x.nz/"
