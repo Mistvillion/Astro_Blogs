@@ -1,5 +1,5 @@
 ---
-title: 伟大的 Team Cherry 与他们伟大的作品
+title: 我忘记了所有悲剧，看到的都是奇迹！
 published: 2026-02-12
 description: 《空洞骑士》与《丝之歌》玩后感受
 tags:
