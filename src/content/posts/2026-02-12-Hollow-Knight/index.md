@@ -1,5 +1,5 @@
 ---
-title: 我忘记了所有悲剧，看到的都是奇迹！
+title: 神圣静穆，丝与灵魂
 published: 2026-02-12
 description: 《空洞骑士》与《丝之歌》玩后感受
 tags:

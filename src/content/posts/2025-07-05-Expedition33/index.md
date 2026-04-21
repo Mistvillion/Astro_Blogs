@@ -1,5 +1,5 @@
 ---
-title: My First Blog Post
+title: 绘我本真，一生去爱
 published: 2025-07-05
 description: This is the first post of my new Astro blog.
 image: ./cover.jpg
