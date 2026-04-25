@@ -2,71 +2,96 @@
 // src/pages/friends.astro
 import { getEntry, render } from "astro:content";
 import Markdown from "@components/misc/Markdown.astro";
-import I18nKey from "../i18n/i18nKey"; 
+import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 import MainGridLayout from "../layouts/MainGridLayout.astro";
 import Giscus from "@components/Giscus.astro";
 
+type FriendLink = {
+	name: string;
+	introduction: string;
+	link: string;
+	avatar: string;
+};
+
 const friendEntry = await getEntry("spec", "friends");
 
 if (!friendEntry) {
-    throw new Error("Friends content not found");
+	throw new Error("Friends content not found");
 }
 
 const { Content } = await render(friendEntry);
-const { friends = [], myInfo } = friendEntry.data; // 从 MD 提取数据
+const { friends = [], myInfo } = friendEntry.data;
+const hasFriends = friends.length > 0;
 ---
 
-<MainGridLayout title={i18n(I18nKey.friends)}>
-    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
-        <div class="card-base z-10 px-9 py-6 relative w-full">
-            
-            <!-- 1. 渲染开场白 (MD 里的文字内容) -->
-            <div class="mb-6 text-90">
-                <Markdown>
-                    <Content />
-                </Markdown>
-            </div>
+<MainGridLayout
+	title={i18n(I18nKey.friends)}
+	description={i18n(I18nKey.friends)}
+>
+	<div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+		<div class="card-base z-10 px-6 py-6 md:px-9 relative w-full">
+			<Markdown class="mt-2">
+				<Content />
+			</Markdown>
 
-            <!-- 2. 【本站信息】卡片样式 -->
-            {myInfo && (
-                <div class="bg-[var(--btn-plain-bg-hover)] p-5 rounded-xl border-l-4 border-[var(--primary)] mb-10">
-                    <p class="font-bold mb-2 text-90 italic flex items-center">
-                        <span class="w-2 h-2 rounded-full bg-[var(--primary)] mr-2"></span>
-                        本站信息
-                    </p>
-                    <ul class="space-y-1 text-75 text-sm font-mono">
-                        <li>名称：{myInfo.name}</li>
-                        <li>介绍：{myInfo.introduction}</li>
-                        <li>链接：<code class="bg-black/5 dark:bg-white/10 px-1 rounded">{myInfo.link}</code></li>
-                        <li>头像：<code class="bg-black/5 dark:bg-white/10 px-1 rounded text-xs">{myInfo.avatar}</code></li>
-                    </ul>
-                </div>
-            )}
+			{myInfo && (
+				<section class="mt-8 rounded-2xl border border-black/5 dark:border-white/10 bg-[var(--btn-plain-bg-hover)] px-5 py-5 md:px-6">
+					<div class="flex items-center gap-3 mb-4">
+						<span class="h-2.5 w-2.5 rounded-full bg-[var(--primary)]"></span>
+						<h2 class="text-lg font-bold text-90">本站信息</h2>
+					</div>
+					<div class="space-y-2 text-75">
+						<p><span class="font-semibold text-90">名称：</span>{myInfo.name}</p>
+						<p><span class="font-semibold text-90">介绍：</span>{myInfo.introduction}</p>
+						<p class="break-all">
+							<span class="font-semibold text-90">链接：</span>
+							<code class="rounded-md bg-black/5 px-1.5 py-0.5 text-sm dark:bg-white/10">{myInfo.link}</code>
+						</p>
+						<p class="break-all">
+							<span class="font-semibold text-90">头像：</span>
+							<code class="rounded-md bg-black/5 px-1.5 py-0.5 text-sm dark:bg-white/10">{myInfo.avatar}</code>
+						</p>
+					</div>
+				</section>
+			)}
 
-            <div class="h-[1px] w-full bg-black/5 dark:bg-white/10 my-8"></div>
+			<div class="my-8 h-px w-full bg-black/5 dark:bg-white/10"></div>
 
-            <!-- 3. 【友链卡片】列表样式 -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {friends.map((friend) => (
-                    <a href={friend.link} target="_blank" rel="noopener noreferrer" 
-                       class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group active:scale-95 border border-transparent hover:border-[var(--primary)]/20 shadow-sm">
-                        <img src={friend.avatar} alt={friend.name} 
-                             class="w-16 h-16 rounded-full border-2 border-[var(--primary)] shadow-sm mr-4 shrink-0 transition-transform group-hover:rotate-12 object-cover" />
-                        <div class="overflow-hidden">
-                            <div class="font-bold text-lg text-90 transition-all group-hover:text-[var(--primary)] truncate">
-                                {friend.name}
-                            </div>
-                            <div class="text-sm text-50 line-clamp-1 italic">
-                                {friend.introduction}
-                            </div>
-                        </div>
-                    </a>
-                ))}
-            </div>
+			{hasFriends ? (
+				<section class="grid grid-cols-1 gap-4 md:grid-cols-2">
+					{friends.map((friend: FriendLink) => (
+						<a
+							href={friend.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="group card-base flex items-center gap-4 border border-transparent p-4 hover:border-[var(--primary)]/20 hover:bg-[var(--btn-plain-bg-hover)] active:scale-[0.98]"
+						>
+							<img
+								src={friend.avatar}
+								alt={friend.name}
+								loading="lazy"
+								class="h-16 w-16 shrink-0 rounded-full border-2 border-[var(--primary)]/60 object-cover transition-transform duration-300 group-hover:rotate-6"
+							/>
+							<div class="min-w-0">
+								<h2 class="truncate text-lg font-bold text-90 transition group-hover:text-[var(--primary)]">
+									{friend.name}
+								</h2>
+								<p class="mt-1 line-clamp-2 text-sm italic text-50">
+									{friend.introduction}
+								</p>
+							</div>
+						</a>
+					))}
+				</section>
+			) : (
+				<section class="card-base border border-dashed border-black/10 px-5 py-6 text-75 dark:border-white/15">
+					<p>友链列表还没有填写内容。</p>
+					<p class="mt-2">你可以继续在 `src/content/spec/friends.md` 的 `friends` 数组里追加友链信息。</p>
+				</section>
+			)}
+		</div>
+	</div>
 
-        </div>
-    </div>
-
-    <Giscus />
+	<Giscus />
 </MainGridLayout>
