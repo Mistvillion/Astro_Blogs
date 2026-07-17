@@ -1,4 +1,8 @@
 {
-  "cssTheme": "",
-  "theme": "obsidian"
+  "cssTheme": "Blue Topaz",
+  "translucency": true,
+  "interfaceFontFamily": "LXGW WenKai",
+  "baseFontSize": 18,
+  "textFontFamily": "LXGW WenKai",
+  "baseFontSizeAction": true
 }

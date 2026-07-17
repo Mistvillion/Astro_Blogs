@@ -1,70 +1,37 @@
 {
   "main": {
-    "id": "4e74a9a94618c346",
+    "id": "8aa85452584ade9f",
     "type": "split",
     "children": [
       {
-        "id": "2196deb7ee58c6da",
+        "id": "44eeeab2309c8ccd",
         "type": "tabs",
         "children": [
           {
-            "id": "12d94cc547a9aedc",
+            "id": "1f2b8e1fdba6dd8c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/2024-04-01-guide/index.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "d26cc8792e56dcf8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/2026-05-05-ShangRao-JiuJiang/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
-            "id": "0f5633d7d5fc56f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/2026-05-17-Compile-Book-Notes/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d8af497a963907ea",
+    "id": "b0a13b76cb5216c0",
     "type": "split",
     "children": [
       {
-        "id": "48bb1629aa519e0d",
+        "id": "96e5ea39bbdc7a7a",
         "type": "tabs",
         "children": [
           {
-            "id": "685b01b834e9b8cd",
+            "id": "c9a55a78f45bfa29",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,7 +44,7 @@
             }
           },
           {
-            "id": "7f16018b3550c6c6",
+            "id": "8bd417223949d76b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -94,7 +61,7 @@
             }
           },
           {
-            "id": "eef42d629d4f515a",
+            "id": "b9ee7b9bd3d1ffe3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -110,20 +77,19 @@
     "width": 300
   },
   "right": {
-    "id": "f024d1817e7e2ec5",
+    "id": "75596bca0c76e6cc",
     "type": "split",
     "children": [
       {
-        "id": "005be3d8885483da",
+        "id": "c65fc43e10e22f41",
         "type": "tabs",
         "children": [
           {
-            "id": "9ac400fce78d119f",
+            "id": "4be79d166983accd",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/markdown-extended.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,25 +99,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "markdown-extended 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
-            "id": "88922e1c4d0f29a5",
+            "id": "37d00728e636be27",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/markdown-extended.md",
+                "file": "LinearAlgebra/src/SUMMARY.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "markdown-extended 的出链列表"
+              "title": "SUMMARY 的出链列表"
             }
           },
           {
-            "id": "a90b470d3688857d",
+            "id": "238848974c455403",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -166,7 +132,7 @@
             }
           },
           {
-            "id": "67d89002b0501b05",
+            "id": "d3c0daad89b6be9f",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -180,18 +146,18 @@
             }
           },
           {
-            "id": "957112a6315b275d",
+            "id": "48f75e6c043e224d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/markdown-extended.md",
+                "file": "LinearAlgebra/src/SUMMARY.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "markdown-extended 的大纲"
+              "title": "SUMMARY 的大纲"
             }
           }
         ]
@@ -212,44 +178,53 @@
       "bases:新建数据库": false
     }
   },
-  "active": "d26cc8792e56dcf8",
+  "active": "1f2b8e1fdba6dd8c",
   "lastOpenFiles": [
-    "posts/2026-05-17-Compile-Book-Notes/e201571892aae93301953db6afe6b0eb.png",
-    "posts/2026-05-17-Compile-Book-Notes/de1a6915161b073e4cf215e9c101e29e.png",
-    "posts/2026-05-17-Compile-Book-Notes/82e10ef542fd5d2f11b0c4ae87dc34eb.png",
-    "posts/2026-05-17-Compile-Book-Notes/49f264d8220b87d634c34f574035a734.png",
-    "posts/2026-05-17-Compile-Book-Notes/4297d55a414d71c7b5344f826c473830.png",
-    "posts/2026-05-17-Compile-Book-Notes/1fba52fe6e3ff498e1ff2bdb9e258ed0.png",
-    "posts/2026-05-17-Compile-Book-Notes/index.md",
-    "posts/2026-05-05-ShangRao-JiuJiang/index.md",
-    "posts/2026-01-24-Travel-JiangZheHu/index.md",
-    "posts/2024-04-01-guide/index.md",
-    "posts/2026-05-17-Compile-Book-Notes/attachments/de1a6915161b073e4cf215e9c101e29e.png",
-    "posts/2026-05-17-Compile-Book-Notes/attachments/e201571892aae93301953db6afe6b0eb.png",
-    "posts/2026-05-17-Compile-Book-Notes/attachments/1fba52fe6e3ff498e1ff2bdb9e258ed0.png",
-    "posts/2026-05-17-Compile-Book-Notes/attachments/4297d55a414d71c7b5344f826c473830.png",
-    "posts/2026-05-17-Compile-Book-Notes/attachments/82e10ef542fd5d2f11b0c4ae87dc34eb.png",
-    "posts/2026-05-17-Compile-Book-Notes/attachments",
-    "未命名 1.md",
-    "posts/2026-05-17-Compile-Book-Notes",
-    "posts/2026-05-05-ShangRao-JiuJiang/attachments",
-    "posts/2025-07-05-Expedition33/index.md",
-    "posts/2026-05-05-ShangRao-JiuJiang",
-    "posts/2026-03-29-AI-papers.md",
-    "posts/2026-04-20-Mentor-Selection.md",
-    "spec/friends.md",
-    "spec/about.md",
-    "posts/2026-03-17-MLE-and-OLS.md",
-    "posts/2026-02-12-Hollow-Knight/index.md",
     "posts/2023-10-01-markdown.md",
-    "posts/2024-04-10-expressive-code.md",
-    "posts/2024-11-29-markdown-extended.md",
-    "posts/2026-04-18-git-operation.md",
-    "posts/2023-08-01-video.md",
-    "posts/draft.md",
-    "posts/2025-11-18-Poet-JinSe.md",
-    "posts/2025-07-05-Expedition33",
-    "posts/AI.md",
-    "posts/2026-02-12-Hollow-Knight"
+    "local-doc.html.md",
+    "NLP/Word2Vec_详解.md",
+    "NLP/1-Word2Vec.md",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/readme-zh.md",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/readme-zh",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/svd.png",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/question_2.1.png",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/question_1.5.png",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/question_1.4_test.png",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/inner_product.png",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/exploring_word_vectors.ipynb",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/env.yml",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student/README.md",
+    "NLP/CS224N_Spring_2024/week_01/assignments/student",
+    "如何使用 Jupyter Book.md",
+    "NLP/lecture_1.md",
+    "Operating-System/未命名.md",
+    "Operating-System/chapter_1.md",
+    "NLP",
+    "Linear-Algebra/_build/html/myst.search.json",
+    "Linear-Algebra/_build/html/myst.xref.json",
+    "Linear-Algebra/_build/html/config.json",
+    "Linear-Algebra/_build/html/build/styles-d830e5383399818d34cedf86d1bbf599.css",
+    "Linear-Algebra/_build/html/build/index-9fdac544026360aa002ebc7ea75eaa7a.md",
+    "Linear-Algebra/_build/html/build/index-19a16148f24c459f74731c973e4d205d.md",
+    "Linear-Algebra/_build/html/build/index-15d0b96317d3acdf512013de879498d6.md",
+    "Linear-Algebra/_build/html/build/chapter_7-d14961cced217b33f824064d0d7a8ba6.md",
+    "Linear-Algebra/_build/html/build/chapter_7-9dad6f662a0440d928b136d9ca5dd954.md",
+    "Linear-Algebra/_build/html/build/chapter_6-88aaae2aa150454fb4664a0ed964fdaf.md",
+    "Linear-Algebra/_build/html/build/chapter_5-91b8b87a7d4ae26f3ab2c59f23742600.md",
+    "Linear-Algebra/_build/html/build/chapter_4-e4e3db16754dc24d685173a91a800b9d.md",
+    "Linear-Algebra/_build/html/build/chapter_4-6607ccbeaa446034b6295682e0b6ed00.md",
+    "Linear-Algebra/_build/html/build/chapter_3-edd70869ee6cffacf6817d56104565f0.md",
+    "Linear-Algebra/_build/html/build/chapter_2-e92de72bd0375af7ee74c859e7540736.md",
+    "Linear-Algebra/_build/html/build/chapter_2-43226856f7bf860ee4cdd30e27d0e15e.md",
+    "Linear-Algebra/_build/html/build/chapter_1-b1b364403365f30a4225f79b2c0e21f6.md",
+    "Linear-Algebra/_build/html/build/chapter_1-0055b9410c9d1b727ce5e0731bdf1662.md",
+    "Linear-Algebra/_build/html/build/appendix-d6b3d8debdb743b181f8898c0b4c3411.md",
+    "Linear-Algebra/_build/html/build/appendix-5efc6eedf737396ca5ac68c725f89cca.md",
+    "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-c57ec375973a62403e1077eb01fcf58e.webp",
+    "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-8f08e51b9b1a305afea53df4037ef268.webp",
+    "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-8f08e51b9b1a305afea53df4037ef268.png",
+    "Linear-Algebra/_build/html/build/7.7-a77f14765e4d0c50329366df37e5d9de.webp",
+    "Linear-Algebra/_build/html/build/7.7-0ec4ef0f43c78687c32a3b6f7efd2856.webp"
   ]
 }

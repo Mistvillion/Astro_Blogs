@@ -1,6 +1,8 @@
 {
   "useMarkdownLinks": true,
-  "alwaysUpdateLinks": true,
+  "strictLineBreaks": true,
+  "newFileLocation": "current",
   "attachmentFolderPath": "./attachments",
+  "alwaysUpdateLinks": true,
   "promptDelete": false
 }
