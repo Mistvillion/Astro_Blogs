@@ -1,6 +1,6 @@
 ---
 title: MLE 与 OLS 合理性推导
-published: 2026-03-17
+published: 2026-02-27
 description: 线性回归中，最大似然估计和最小二乘法合理性的推导
 tags:
   - 概率论

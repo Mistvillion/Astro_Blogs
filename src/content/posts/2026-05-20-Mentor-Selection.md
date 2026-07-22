@@ -1,6 +1,6 @@
 ---
 title: 导师选择
-published: 2026-04-20
+published: 2026-05-20
 description: 选择导师过程中的常见术语与雷区
 tags:
   - 考研

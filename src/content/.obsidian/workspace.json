@@ -11,13 +11,32 @@
             "id": "1f2b8e1fdba6dd8c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "posts/2026-02-27-MLE-and-OLS.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2026-02-27-MLE-and-OLS"
+            }
+          },
+          {
+            "id": "23fd00f9fa9d16aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/2026-07-21-Workflow-for-AI-Coding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-21-Workflow-for-AI-Coding"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -178,9 +197,19 @@
       "bases:新建数据库": false
     }
   },
-  "active": "1f2b8e1fdba6dd8c",
+  "active": "23fd00f9fa9d16aa",
   "lastOpenFiles": [
-    "posts/2023-10-01-markdown.md",
+    "posts/2024-04-01-guide/index.md",
+    "posts/2026-05-20-Mentor-Selection.md",
+    "posts/2026-07-21-Workflow-for-AI-Coding.md",
+    "posts/2026-02-27-MLE-and-OLS.md",
+    "posts/2024-10-01-markdown.md",
+    "posts/2026-02-12-Hollow-Knight/index.md",
+    "posts/2025-11-18-Poet-JinSe.md",
+    "posts/2026-05-12-AI-papers.md",
+    "posts/2024-08-01-video.md",
+    "posts/2026-05-19-ClaudeCodeCommand.md",
+    "posts/draft.md",
     "local-doc.html.md",
     "NLP/Word2Vec_详解.md",
     "NLP/1-Word2Vec.md",
@@ -211,16 +240,6 @@
     "Linear-Algebra/_build/html/build/chapter_7-d14961cced217b33f824064d0d7a8ba6.md",
     "Linear-Algebra/_build/html/build/chapter_7-9dad6f662a0440d928b136d9ca5dd954.md",
     "Linear-Algebra/_build/html/build/chapter_6-88aaae2aa150454fb4664a0ed964fdaf.md",
-    "Linear-Algebra/_build/html/build/chapter_5-91b8b87a7d4ae26f3ab2c59f23742600.md",
-    "Linear-Algebra/_build/html/build/chapter_4-e4e3db16754dc24d685173a91a800b9d.md",
-    "Linear-Algebra/_build/html/build/chapter_4-6607ccbeaa446034b6295682e0b6ed00.md",
-    "Linear-Algebra/_build/html/build/chapter_3-edd70869ee6cffacf6817d56104565f0.md",
-    "Linear-Algebra/_build/html/build/chapter_2-e92de72bd0375af7ee74c859e7540736.md",
-    "Linear-Algebra/_build/html/build/chapter_2-43226856f7bf860ee4cdd30e27d0e15e.md",
-    "Linear-Algebra/_build/html/build/chapter_1-b1b364403365f30a4225f79b2c0e21f6.md",
-    "Linear-Algebra/_build/html/build/chapter_1-0055b9410c9d1b727ce5e0731bdf1662.md",
-    "Linear-Algebra/_build/html/build/appendix-d6b3d8debdb743b181f8898c0b4c3411.md",
-    "Linear-Algebra/_build/html/build/appendix-5efc6eedf737396ca5ac68c725f89cca.md",
     "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-c57ec375973a62403e1077eb01fcf58e.webp",
     "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-8f08e51b9b1a305afea53df4037ef268.webp",
     "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-8f08e51b9b1a305afea53df4037ef268.png",
