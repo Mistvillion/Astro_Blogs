@@ -13,26 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2026-02-27-MLE-and-OLS.md",
+                "file": "posts/2026-01-24-Travel-JiangZheHu/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-02-27-MLE-and-OLS"
+              "title": "index"
             }
           },
           {
-            "id": "23fd00f9fa9d16aa",
+            "id": "d6cfe1b7c9c0c2a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2026-07-21-Workflow-for-AI-Coding.md",
+                "file": "posts/2026-07-30-HongKong/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-21-Workflow-for-AI-Coding"
+              "title": "index"
             }
           }
         ],
@@ -197,12 +197,26 @@
       "bases:新建数据库": false
     }
   },
-  "active": "23fd00f9fa9d16aa",
+  "active": "c9a55a78f45bfa29",
   "lastOpenFiles": [
+    "posts/2026-07-30-HongKong/attachments/太平山顶2.jpg",
+    "posts/2026-07-30-HongKong/attachments/太平山顶1.jpg",
+    "posts/2026-07-30-HongKong/attachments/皇后大道2.jpg",
+    "posts/2026-07-30-HongKong/attachments/皇后大道1.jpg",
+    "posts/2026-07-30-HongKong/attachments/维多利亚港3.jpg",
+    "posts/2026-07-30-HongKong/attachments/维多利亚港2.jpg",
+    "posts/2026-07-30-HongKong/attachments/旺角2.jpg",
+    "posts/2026-07-30-HongKong/attachments/维多利亚港1.jpg",
+    "posts/2026-07-30-HongKong/attachments/PolyU.jpg",
+    "posts/2026-07-30-HongKong/attachments/旺角1.jpg",
+    "posts/2026-07-30-HongKong/attachments",
+    "posts/2026-01-24-Travel-JiangZheHu/index.md",
+    "posts/2026-07-30-HongKong/index.md",
+    "posts/2026-07-30-HongKong",
     "posts/2024-04-01-guide/index.md",
-    "posts/2026-05-20-Mentor-Selection.md",
-    "posts/2026-07-21-Workflow-for-AI-Coding.md",
     "posts/2026-02-27-MLE-and-OLS.md",
+    "posts/2026-07-21-Workflow-for-AI-Coding.md",
+    "posts/2026-05-20-Mentor-Selection.md",
     "posts/2024-10-01-markdown.md",
     "posts/2026-02-12-Hollow-Knight/index.md",
     "posts/2025-11-18-Poet-JinSe.md",
@@ -216,10 +230,6 @@
     "NLP/CS224N_Spring_2024/week_01/assignments/student/readme-zh.md",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/readme-zh",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/svd.png",
-    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/question_2.1.png",
-    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/question_1.5.png",
-    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/question_1.4_test.png",
-    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/inner_product.png",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/exploring_word_vectors.ipynb",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/env.yml",
@@ -232,18 +242,8 @@
     "NLP",
     "Linear-Algebra/_build/html/myst.search.json",
     "Linear-Algebra/_build/html/myst.xref.json",
-    "Linear-Algebra/_build/html/config.json",
-    "Linear-Algebra/_build/html/build/styles-d830e5383399818d34cedf86d1bbf599.css",
     "Linear-Algebra/_build/html/build/index-9fdac544026360aa002ebc7ea75eaa7a.md",
     "Linear-Algebra/_build/html/build/index-19a16148f24c459f74731c973e4d205d.md",
-    "Linear-Algebra/_build/html/build/index-15d0b96317d3acdf512013de879498d6.md",
-    "Linear-Algebra/_build/html/build/chapter_7-d14961cced217b33f824064d0d7a8ba6.md",
-    "Linear-Algebra/_build/html/build/chapter_7-9dad6f662a0440d928b136d9ca5dd954.md",
-    "Linear-Algebra/_build/html/build/chapter_6-88aaae2aa150454fb4664a0ed964fdaf.md",
-    "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-c57ec375973a62403e1077eb01fcf58e.webp",
-    "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-8f08e51b9b1a305afea53df4037ef268.webp",
-    "Linear-Algebra/_build/html/build/Cover-Linear-Algebra-8f08e51b9b1a305afea53df4037ef268.png",
-    "Linear-Algebra/_build/html/build/7.7-a77f14765e4d0c50329366df37e5d9de.webp",
-    "Linear-Algebra/_build/html/build/7.7-0ec4ef0f43c78687c32a3b6f7efd2856.webp"
+    "Linear-Algebra/_build/html/build/index-15d0b96317d3acdf512013de879498d6.md"
   ]
 }
