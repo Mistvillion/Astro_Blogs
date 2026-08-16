@@ -8,26 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1f2b8e1fdba6dd8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/2026-01-24-Travel-JiangZheHu/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
             "id": "d6cfe1b7c9c0c2a5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2026-07-30-HongKong/index.md",
+                "file": "posts/2026-05-05-ShangRao-JiuJiang/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,8 +21,7 @@
               "title": "index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -56,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -197,8 +184,15 @@
       "bases:新建数据库": false
     }
   },
-  "active": "c9a55a78f45bfa29",
+  "active": "d6cfe1b7c9c0c2a5",
   "lastOpenFiles": [
+    "posts/2026-05-05-ShangRao-JiuJiang/expanded.md",
+    "posts/2026-05-05-ShangRao-JiuJiang/index.md",
+    "posts/2026-05-05-ShangRao-JiuJiang/new.md",
+    "posts/2026-05-05-ShangRao-JiuJiang/雾是山的呼吸.md",
+    "posts/2026-01-24-Travel-JiangZheHu/index.md",
+    "posts/2026-05-05-ShangRao-JiuJiang/index-rewrite.md",
+    "posts/2026-07-30-HongKong/index.md",
     "posts/2026-07-30-HongKong/attachments/太平山顶2.jpg",
     "posts/2026-07-30-HongKong/attachments/太平山顶1.jpg",
     "posts/2026-07-30-HongKong/attachments/皇后大道2.jpg",
@@ -210,8 +204,6 @@
     "posts/2026-07-30-HongKong/attachments/PolyU.jpg",
     "posts/2026-07-30-HongKong/attachments/旺角1.jpg",
     "posts/2026-07-30-HongKong/attachments",
-    "posts/2026-01-24-Travel-JiangZheHu/index.md",
-    "posts/2026-07-30-HongKong/index.md",
     "posts/2026-07-30-HongKong",
     "posts/2024-04-01-guide/index.md",
     "posts/2026-02-27-MLE-and-OLS.md",
@@ -229,7 +221,6 @@
     "NLP/1-Word2Vec.md",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/readme-zh.md",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/readme-zh",
-    "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs/svd.png",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/exploring_word_vectors.ipynb",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/env.yml",
@@ -238,12 +229,8 @@
     "如何使用 Jupyter Book.md",
     "NLP/lecture_1.md",
     "Operating-System/未命名.md",
-    "Operating-System/chapter_1.md",
     "NLP",
     "Linear-Algebra/_build/html/myst.search.json",
-    "Linear-Algebra/_build/html/myst.xref.json",
-    "Linear-Algebra/_build/html/build/index-9fdac544026360aa002ebc7ea75eaa7a.md",
-    "Linear-Algebra/_build/html/build/index-19a16148f24c459f74731c973e4d205d.md",
-    "Linear-Algebra/_build/html/build/index-15d0b96317d3acdf512013de879498d6.md"
+    "Linear-Algebra/_build/html/myst.xref.json"
   ]
 }

@@ -59,11 +59,11 @@ export const profileConfig: ProfileConfig = {
 	bio: "玉楼金阙慵归去，且插梅花醉洛阳",
 	links: [
 		{
-			name: "X",
-			icon: "fa6-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
+			name: "主页",
+			icon: "fa6-solid:house", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://x.com/SparkleRain1012",
+			url: "https://sparklerain.top/",
 		},
 		{
 			name: "Bilibili",
