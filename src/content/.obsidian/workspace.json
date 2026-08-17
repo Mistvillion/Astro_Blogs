@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d6cfe1b7c9c0c2a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/2024-04-01-guide/index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "index"
-            }
-          },
-          {
             "id": "c9c69d230aeb6812",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "2026-05-17-Codex-User-Guide"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/2026-05-17-Codex-User-Guide.md",
+                "file": "spec/about.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -200,12 +185,19 @@
       "bases:新建数据库": false
     }
   },
-  "active": "48f75e6c043e224d",
+  "active": "c9a55a78f45bfa29",
   "lastOpenFiles": [
-    "posts/2026-06-20-Mentor-Selection.md",
-    "posts/2026-05-17-Codex-User-Guide.md",
-    "posts/codex_baomu_jiaocheng.md",
+    "spec/friends.md",
+    "spec/about.md",
+    "posts/2024-10-01-markdown.md",
+    "posts/2024-11-29-markdown-extended.md",
+    "posts/draft.md",
+    "posts/2024-08-01-video.md",
+    "posts/2024-04-10-expressive-code.md",
     "posts/2024-04-01-guide/index.md",
+    "posts/2026-05-17-Codex-User-Guide.md",
+    "posts/2026-06-20-Mentor-Selection.md",
+    "posts/codex_baomu_jiaocheng.md",
     "posts/2026-05-05-ShangRao-JiuJiang/index.md",
     "posts/2026-05-05-ShangRao-JiuJiang/expanded.md",
     "posts/2026-05-05-ShangRao-JiuJiang/new.md",
@@ -227,24 +219,17 @@
     "posts/2026-07-30-HongKong",
     "posts/2026-02-27-MLE-and-OLS.md",
     "posts/2026-07-21-Workflow-for-AI-Coding.md",
-    "posts/2024-10-01-markdown.md",
     "posts/2026-02-12-Hollow-Knight/index.md",
     "posts/2025-11-18-Poet-JinSe.md",
     "posts/2026-05-12-AI-papers.md",
-    "posts/2024-08-01-video.md",
     "posts/2026-05-19-ClaudeCodeCommand.md",
-    "posts/draft.md",
     "local-doc.html.md",
     "NLP/Word2Vec_详解.md",
-    "NLP/1-Word2Vec.md",
-    "NLP/CS224N_Spring_2024/week_01/assignments/student/readme-zh.md",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/readme-zh",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/imgs",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/exploring_word_vectors.ipynb",
     "NLP/CS224N_Spring_2024/week_01/assignments/student/env.yml",
-    "NLP/CS224N_Spring_2024/week_01/assignments/student/README.md",
     "NLP/CS224N_Spring_2024/week_01/assignments/student",
-    "如何使用 Jupyter Book.md",
     "NLP",
     "Linear-Algebra/_build/html/myst.search.json",
     "Linear-Algebra/_build/html/myst.xref.json"
