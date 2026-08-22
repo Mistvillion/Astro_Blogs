@@ -3,11 +3,12 @@ title: Codex 保姆级教程：小白从安装到跑通项目
 published: 2026-05-17
 description: 转载一篇看到的比较好的文章
 tags:
-- AI
-- Codex
+  - AI
+  - Codex
+  - 转载
 category: 学习心得
 ---
-原文链接：https://mp.weixin.qq.com/s/DuIOd6qLH8_4_3iP9XKXwg
+转载一篇看到的比较好的文章。原文链接：https://mp.weixin.qq.com/s/DuIOd6qLH8_4_3iP9XKXwg
 
 相信很多朋友跟我一样，第一次打开 Codex，第一反应不是“哇，好强”，而是：这东西到底从哪开始用？它看起来像一个聊天软件，但又能读文件、改项目、开浏览器、装插件、跑命令、接 MCP。软件界面的左边是一堆入口，中间是对话，右边还会弹出文件、网页、预览、代码变化。
 
